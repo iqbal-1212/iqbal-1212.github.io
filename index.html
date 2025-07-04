@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbal Village</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/output.css">
+
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header id="mainHeader" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 text-green-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="/" class="flex items-center gap-2 text-xl font-bold">
+        <img src="./assets/images/logo.png" id="logo-nav" alt="Logo" class="w-12 h-12">
+        <span>Herbal Village</span>
+      </a>
+      <button id="navToggle" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <nav id="navMenu" class="hidden md:flex space-x-6">
+        <a href="#hero" class="hover:text-orange-400">Home</a>
+        <a href="#about" class="hover:text-orange-400">About Us</a>
+        <a href="#toga" class="hover:text-orange-400">TOGA</a>
+        <a href="#edukasi" class="hover:text-orange-400">Edukasi</a>
+        <a href="#produk" class="hover:text-orange-400">Produk</a>
+        <a href="#kontak" class="hover:text-orange-400">Kontak</a>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-green-600">
+      <a href="#hero" class="block text-white hover:text-orange-400">Home</a>
+      <a href="#about" class="block text-white hover:text-orange-400">About Us</a>
+      <a href="#toga" class="block text-white hover:text-orange-400">TOGA</a>
+      <a href="#edukasi" class="block text-white hover:text-orange-400">Edukasi</a>
+      <a href="#produk" class="block text-white hover:text-orange-400">Produk</a>
+      <a href="#kontak" class="block text-white hover:text-orange-400">Kontak</a>
+    </div>
+  </header>
+
+  <!-- SECTION HERO -->
+  <section id="hero"
+    class="pt-24 bg-gradient-to-b from-green-50 to-green-100 text-green-800 min-h-screen flex items-center">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-4 max-w-screen-xl">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to <br> Herbal Village</h1>
+        <p class="text-lg mb-6">Pusat informasi dan edukasi Tanaman Obat Keluarga (TOGA) yang dirawat dengan kearifan
+          lokal. Dukung gaya hidup alami dan sehat mulai dari rumah.
+        </p>
+        <a href="#about"
+          class="bg-orange-500 text-white px-6 py-3 rounded font-semibold hover:bg-orange-400 transition">
+          Jelajahi Sekarang
+        </a>
+      </div>
+      <div class="flex justify-center mt-8 md:mt-0">
+        <img src="./assets/images/hero-img.png" alt="Wind Illustration" class="max-w-full lg:max-w-128 h-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ABOUT -->
+  <section id="about" class="bg-green-50 py-16 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <!-- Image / Foto Komunitas -->
+      <div class="md:w-1/2">
+        <img src="./assets/images/vector.png" alt="Komunitas Herbal Village" class="rounded-lg w-full object-cover" />
+      </div>
+      <!-- Konten Text -->
+      <div class="md:w-1/2">
+        <h2 class="text-4xl font-bold text-green-800 mb-4">Tentang Herbal Village</h2>
+        <p class="text-green-700 mb-6 leading-relaxed">
+          Herbal Village adalah marketplace tanaman obat keluarga (TOGA) yang berasal dari satu desa, berkomitmen untuk
+          mengembangkan dan melestarikan tanaman herbal agar menjadi bagian dari gaya hidup sehat masyarakat.
+        </p>
+        <h3 class="text-2xl font-semibold text-green-700 mb-2">Misi Kami</h3>
+        <ul class="list-disc list-inside text-green-700 mb-6 space-y-1">
+          <li>Menghubungkan petani dan komunitas TOGA dengan konsumen secara langsung</li>
+          <li>Menyediakan edukasi lengkap tentang manfaat dan cara budidaya tanaman obat</li>
+          <li>Mendukung pelestarian lingkungan dan budaya herbal tradisional</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-green-700 mb-2">Visi Kami</h3>
+        <p class="text-green-700">
+          Menjadi platform utama yang memudahkan masyarakat dalam mengakses dan memanfaatkan tanaman herbal
+          sebagai sumber kesehatan alami.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TOGA -->
+  <section id="toga" class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-800 text-center mb-8">Panduan Budidaya Tanaman TOGA</h2>
+      <div class="w-24 md:w-64 h-1 bg-green-800 mx-auto mb-8 rounded"></div>
+      <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+        Nikmati berbagai produk olahan tanaman obat keluarga yang diracik secara higienis dan alami.<br>
+        Cocok untuk gaya hidup sehat, praktis, dan ramah lingkungan.
+      </p>
+
+      <!-- Card 1: LUSH JUM -->
+      <div class="flex flex-col md:flex-row items-center w-full bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+        <div class="w-full md:w-1/3 h-60">
+          <img src="assets/images/toga_lushjam.png" alt="LUSH JAM" class="w-full h-full object-cover object-center" />
+        </div>
+        <div class="w-full md:w-2/3 flex flex-col justify-between p-6 h-60 text-center">
+          <div>
+            <h3 class="text-2xl font-semibold text-green-800 mb-4">Infused Water “LUSH JAM”</h3>
+            <p class="mb-6 text-gray-700 text-sm leading-relaxed max-w-md">
+              Infused Water "LUSH JAM" adalah minuman sehat berbahan dasar lemon segar dan madu alami yang diracik
+              secara higienis untuk mendukung gaya hidup modern. Lemon kaya vitamin C dan antioksidan untuk membantu
+              detoksifikasi dan menjaga daya tahan tubuh, sementara madu menambah rasa manis alami sekaligus memberikan
+              manfaat antimikroba.
+
+              Cocok dikonsumsi setiap hari untuk menjaga kesegaran dan hidrasi tubuh. Dengan kemasan praktis dan tanpa
+              bahan pengawet maupun pemanis buatan, LUSH JAM adalah solusi sehat dan alami untuk seluruh keluarga.
+            </p>
+          </div>
+          <div class="mt-6 flex justify-center md:justify-start">
+            <button onclick="openModal('lushjam')"
+              class="bg-green-600 text-white font-semibold px-6 py-2 rounded hover:bg-green-700 transition">
+              Selengkapnya
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: SEJIWA -->
+      <div class="flex flex-col md:flex-row items-center w-full bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+        <div class="w-full md:w-2/3 flex flex-col justify-between p-6 h-60 text-center">
+          <div>
+            <h3 class="text-2xl font-semibold text-green-800 mb-4">Jamu “SEJIWA”</h3>
+            <p class="mb-6 text-gray-700 text-sm leading-relaxed max-w-md">
+              Jamu “SEJIWA” adalah jamu herbal praktis berbentuk sachet, terbuat dari rempah alami seperti kencur, jahe,
+              kunyit, dan sereh. Racikan ini membantu menjaga daya tahan tubuh, meredakan pegal, dan menyegarkan badan.
+
+              Tanpa bahan pengawet atau pemanis buatan, SEJIWA aman dikonsumsi setiap hari. Praktis dan higienis, cocok
+              untuk gaya hidup sehat modern—cukup seduh dan nikmati khasiat jamu tradisional kapan saja, di mana saja.
+            </p>
+          </div>
+          <div class="mt-6 flex justify-center md:justify-start">
+            <a href="#toga-modal" onclick="openModal('sejiwa')"
+              class="bg-green-600 text-white font-semibold px-6 py-2 rounded hover:bg-green-700 transition">
+              Selengkapnya
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 h-60">
+          <img src="assets/images/toga_sejiwa.png" alt="SEJIWA" class="w-full h-full object-cover object-center" />
+        </div>
+      </div>
+
+      <!-- Modal Template -->
+      <div id="toga-modal"
+        class="fixed inset-0 z-50 bg-gray-900/70 flex items-center justify-center overflow-y-auto px-4 py-8 hidden">
+        <div class="bg-white rounded-xl shadow-xl max-w-4xl w-full p-8 relative max-h-[90vh] overflow-y-auto">
+          <button onclick="closeModal()"
+            class="absolute top-4 right-4 text-gray-600 hover:text-red-500 text-2xl">&times;</button>
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="md:w-1/2">
+              <img id="herbal-img" src="" alt="" class="w-full h-72 object-cover rounded-lg shadow">
+            </div>
+            <div class="md:w-1/2 text-gray-700">
+              <h2 id="herbal-title" class="text-3xl font-semibold text-green-700 mb-2"></h2>
+              <p id="herbal-subtitle" class="mb-4 text-sm italic text-gray-500"></p>
+
+              <div class="mb-4">
+                <h3 class="text-lg font-semibold text-green-800">Deskripsi</h3>
+                <p id="herbal-description"></p>
+              </div>
+
+              <div class="mb-4">
+                <h3 class="text-lg font-semibold text-green-800">Manfaat Kesehatan</h3>
+                <ul id="herbal-benefits" class="list-disc list-inside"></ul>
+              </div>
+
+              <div class="mb-6">
+                <h3 class="text-lg font-semibold text-green-800">Cara Budidaya</h3>
+                <p id="herbal-cultivation"></p>
+              </div>
+
+              <button onclick="closeModal()" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION PANDUAN -->
+  <section id="panduan-budidaya" class="py-16 bg-green-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-800 text-center mb-8">Panduan Budidaya Tanaman TOGA</h2>
+      <div class="w-24 md:w-64 h-1 bg-green-800 mx-auto mb-8 rounded"></div>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+        Pelajari langkah mudah menanam dan merawat tanaman obat keluarga (TOGA) dengan panduan visual berikut.
+      </p>
+
+      <!-- Visual steps -->
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-6 md:mb-12">
+        <!-- Step Template -->
+        <div class="flex flex-col md:flex-row gap-2 bg-white rounded-lg shadow p-4">
+          <img src="assets/images/panduan (1).jpg" alt="Pilih Lokasi" class="w-full md:w-40 h-40 object-cover rounded">
+          <div class="flex flex-col h-auto">
+            <h3 class="text-lg font-semibold text-green-700 mb-1">1. Pilih Lokasi Tanam</h3>
+            <p class="text-gray-600 text-sm">Pilih lokasi yang terkena sinar matahari cukup dan memiliki drainase baik.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col md:flex-row gap-2 bg-white rounded-lg shadow p-4">
+          <img src="assets/images/panduan (2).jpg" alt="Siapkan Media Tanam"
+            class="w-full md:w-40 h-40 object-cover rounded">
+          <div class="flex flex-col h-auto">
+            <h3 class="text-lg font-semibold text-green-700 mb-1">2. Siapkan Media Tanam</h3>
+            <p class="text-gray-600 text-sm">Gunakan campuran tanah, kompos, dan pasir untuk hasil yang optimal.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col md:flex-row gap-2 bg-white rounded-lg shadow p-4">
+          <img src="assets/images/panduan (3).jpg" alt="Penanaman Bibit"
+            class="w-full md:w-40 h-40 object-cover rounded">
+          <div class="flex flex-col h-auto">
+            <h3 class="text-lg font-semibold text-green-700 mb-1">3. Tanam Bibit</h3>
+            <p class="text-gray-600 text-sm">Tanam bibit TOGA seperti jahe, kunyit, atau temulawak di media yang sudah
+              disiapkan.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex flex-col md:flex-row gap-2 bg-white rounded-lg shadow p-4">
+          <img src="assets/images/panduan (4).jpg" alt="Penyiraman" class="w-full md:w-40 h-40 object-cover rounded">
+          <div class="flex flex-col h-auto">
+            <h3 class="text-lg font-semibold text-green-700 mb-1">4. Penyiraman Rutin</h3>
+            <p class="text-gray-600 text-sm">Siram tanaman secara rutin, terutama di pagi atau sore hari untuk menjaga
+              kelembapan.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="flex flex-col md:flex-row gap-2 bg-white rounded-lg shadow p-4">
+          <img src="assets/images/panduan (5).jpg" alt="Pemupukan" class="w-full md:w-40 h-40 object-cover rounded">
+          <div class="flex flex-col h-auto">
+            <h3 class="text-lg font-semibold text-green-700 mb-1">5. Pemupukan Berkala</h3>
+            <p class="text-gray-600 text-sm">Berikan pupuk organik setiap 2–3 minggu sekali untuk menunjang pertumbuhan
+              tanaman.</p>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="flex flex-col md:flex-row gap-2 bg-white rounded-lg shadow p-4">
+          <img src="assets/images/panduan (6).jpg" alt="Panen" class="w-full md:w-40 h-40 object-cover rounded">
+          <div class="flex flex-col h-auto">
+            <h3 class="text-lg font-semibold text-green-700 mb-1">6. Panen & Manfaatkan</h3>
+            <p class="text-gray-600 text-sm">Panen saat rimpang cukup besar, lalu manfaatkan untuk konsumsi atau
+              pengobatan alami.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- YouTube tutorial iframe -->
+      <div class="max-w-4xl mx-auto">
+        <div class="w-full h-[360px]">
+          <iframe class="w-full h-full rounded-lg shadow-lg"
+            src="https://www.youtube.com/embed/02A9NHhPY1I?si=efi3BmRN1cQR9RdO" title="Tutorial Budidaya Tanaman TOGA"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- SECTION EDUKASI -->
+  <section id="edukasi" class="bg-white py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <!-- Judul dan Intro -->
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold text-green-800 mb-4">Edukasi & Artikel</h2>
+        <div class="w-24 md:w-64 h-1 bg-green-800 mx-auto mb-8 rounded"></div>
+        <p class="text-green-700 text-lg max-w-3xl mx-auto">
+          Pengetahuan adalah kunci utama dalam membangun gaya hidup sehat berbasis herbal.
+          Temukan berbagai informasi menarik seputar manfaat dan pemanfaatan TOGA.
+        </p>
+      </div>
+
+      <!-- Blog Cards -->
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Artikel 1 -->
+        <div class="bg-green-50 rounded-lg shadow-md overflow-hidden flex flex-col">
+          <img src="./assets/images/blog (1).jpg" alt="Khasiat TOGA" class="h-56 w-full object-cover">
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-semibold text-green-800 mb-2">Khasiat TOGA untuk Kesehatan</h3>
+            <p class="text-green-700 mb-4 flex-grow">
+              Tanaman seperti jahe, kunyit, dan temulawak telah lama dikenal sebagai herbal alami untuk meningkatkan
+              daya tahan tubuh dan mencegah penyakit. Pelajari manfaat luar biasanya di artikel ini.
+            </p>
+            <a href="#"
+              class="inline-block bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded self-start transition duration-200">
+              Baca selengkapnya
+            </a>
+          </div>
+        </div>
+
+        <!-- Artikel 2 -->
+        <div class="bg-green-50 rounded-lg shadow-md overflow-hidden flex flex-col">
+          <img src="./assets/images/blog (2).jpg" alt="Resep TOGA" class="h-56 w-full object-cover">
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-semibold text-green-800 mb-2">Resep Sehat dari TOGA</h3>
+            <p class="text-green-700 mb-4 flex-grow">
+              Ingin mencoba ramuan herbal sendiri di rumah? Kami bagikan resep sederhana menggunakan TOGA, seperti
+              wedang jahe dan jamu kunyit asam yang mudah dibuat dan kaya manfaat.
+            </p>
+            <a href="#"
+              class="inline-block bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded self-start transition duration-200">
+              Baca selengkapnya
+            </a>
+          </div>
+        </div>
+
+        <!-- Artikel 3 (Dummy) -->
+        <div class="bg-green-50 rounded-lg shadow-md overflow-hidden flex flex-col">
+          <img src="./assets/images/blog (3).jpg" alt="Tips Perawatan TOGA" class="h-56 w-full object-cover">
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-semibold text-green-800 mb-2">Tips Perawatan Tanaman TOGA di Rumah</h3>
+            <p class="text-green-700 mb-4 flex-grow">
+              Merawat tanaman obat keluarga ternyata mudah jika tahu triknya. Artikel ini membahas cara penyiraman,
+              pemupukan, dan pencegahan hama agar tanaman TOGA Anda tumbuh subur.
+            </p>
+            <a href="#"
+              class="inline-block bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded self-start transition duration-200">
+              Baca selengkapnya
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PRODUK -->
+  <section id="produk" class="bg-green-50 py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold text-green-800 mb-4">Katalog Produk Herbal</h2>
+        <div class="w-24 md:w-64 h-1 bg-green-800 mx-auto mb-8 rounded"></div>
+        <p class="text-green-700 text-lg max-w-3xl mx-auto">
+          Jelajahi koleksi produk herbal berkualitas dari kebun TOGA kami — alami, sehat, dan penuh manfaat untuk
+          menunjang gaya hidup sehatmu!
+        </p>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <!-- Produk Jahe -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="assets/images/produk_jahe_merah.jpg" alt="Jahe Merah" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-green-800 mb-1">Jahe Merah Bubuk 250gr</h3>
+            <!-- https://shopee.co.id/JAHE-MERAH-BUBUK-250G-ASLI-100-TANPA-CAMPURAN-ORIGINAL-NATURLIFE-SERBUK-JAHE-BUBUK-MINUMAN-JAHE-MERAH-JAHE-MERAH-INSTAN-PURE-RED-GINGER-POWDER-IMUN-BOOSTER-ORGANIC-NUTRIFARM-BEORGANIK-DARI-BUMI-SAFIYA-GALLEO-i.949762424.25131095441?sp_atk=782464e0-bf18-41b0-b1d5-59183eb1a225&xptdk=782464e0-bf18-41b0-b1d5-59183eb1a225 -->
+            <!-- Harga Sebelum & Sesudah -->
+            <div class="mb-2">
+              <span class="text-green-700 font-medium text-lg">Rp 35.000</span>
+              <span class="text-sm text-gray-400 line-through mr-2">Rp 90.000</span>
+            </div>
+
+            <!-- Deskripsi Singkat -->
+            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+              Jahe merah bermanfaat untuk meningkatkan imun tubuh dan membantu melancarkan peredaran darah secara alami.
+            </p>
+
+            <!-- Tombol -->
+            <a href="detail-produk.html?id=jahe"
+              class="inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-2 text-sm rounded-full transition duration-200">
+              Lihat Detail
+            </a>
+          </div>
+        </div>
+
+        <!-- Produk Temulawak -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="assets/images/produk_temulawak.jpg" alt="Jahe Merah" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-green-800 mb-1">Temulawak Bubuk Premium</h3>
+            <!-- https://shopee.co.id/TEMULAWAK-BUBUK-MURNI-PREMIUM-ASLI-TANPA-CAMPURAN-ASLI-100-ORIGINAL-JAMU-TEMULAWAK-SERBUK-TEMULAWAK-MINUMAN-TEMULAWAK-HERBAL-TEMULAWAK-CURCUMA-POWDER-CURCUMA-POWDER-NUTRIFARM-BRAGG-DARI-BUMI-GEMELI-LEMOVITA-NUTRILOGY-OFFICIAL-BEORGANIK-i.949762424.26762646104 -->
+            <!-- Harga Sebelum & Sesudah -->
+            <div class="mb-2">
+              <span class="text-green-700 font-medium text-lg">Rp 25.000</span>
+              <span class="text-sm text-gray-400 line-through mr-2">Rp 55.000</span>
+            </div>
+
+            <!-- Deskripsi Singkat -->
+            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+              100% Temulawak (Curcuma) asli yang diolah menjadi bubuk, tanpa campuran apapun.
+              Praktis digunakan sebagai bahan campuran jamu alami yang memiliki kandungan utama yakni kurkumin sebagai
+              antioksidan alami yang baik.
+            </p>
+
+            <!-- Tombol -->
+            <a href="detail-produk.html?id=temulawak"
+              class="inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-2 text-sm rounded-full transition duration-200">
+              Lihat Detail
+            </a>
+          </div>
+        </div>
+
+        <!-- Produk Kunyit -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="assets/images/produk_kunyit.jpg" alt="Jahe Merah" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-green-800 mb-1">Kunyit Kuning Bubuk</h3>
+            <!-- https://shopee.co.id/KUNYIT-KUNING-BUBUK-TANPA-CAMPURAN-ASLI-100-ORIGINAL-50G-150G-250G-TUMERIC-POWDER-KUNIR-BUBUK-BAHAN-POKOK-POWDER-BUMBU-REMPAH-ORGANIK-KUALITAS-PREMIUM-KUNYIT-BUMBU-DAPUR-BUBUK-LENGKAP-SUPER-NUTRIFARM-BRAGG-DARI-BUMI-GEMELI-LEMOVITA-OFFICIAL-BEORGANIK-i.949762424.28005242377 -->
+            <!-- Harga Sebelum & Sesudah -->
+            <div class="mb-2">
+              <span class="text-green-700 font-medium text-lg">Rp 17.000</span>
+              <span class="text-sm text-gray-400 line-through mr-2">Rp 35.000</span>
+            </div>
+
+            <!-- Deskripsi Singkat -->
+            <p class="text-sm text-gray-600 mb-4 line-clamp-2">
+              100% Akar kunyit asli yang diolah menjadi bubuk, tanpa campuran apapun. Praktis digunakan sebagai minuman
+              herbal dan bahan penyedap makanan alami yang memiliki kandungan senyawa aktif kurkumin yang memiliki sifat
+              antiinflamasi dan antioksidan.
+            </p>
+
+            <!-- Tombol -->
+            <a href="detail-produk.html?id=kunyit"
+              class="inline-block bg-green-600 hover:bg-green-700 text-white px-5 py-2 text-sm rounded-full transition duration-200">
+              Lihat Detail
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION GALERI -->
+  <section id="galeri" class="bg-white py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-4xl font-bold text-green-800 mb-4">Galeri Kegiatan Kami</h2>
+        <div class="w-24 md:w-64 h-1 bg-green-800 mx-auto mb-8 rounded"></div>
+        <p class="text-green-700 text-lg max-w-3xl mx-auto">
+          Intip berbagai momen seru dari aktivitas komunitas Herbal Village — mulai dari kebun TOGA, proses pengolahan
+          herbal, hingga acara kebersamaan yang penuh inspirasi.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- Card 1: Green House -->
+        <div class="relative rounded-lg overflow-hidden shadow-lg group"
+          onclick="openGaleri('assets/images/galeri (1).jpg')">
+          <img src="assets/images/galeri (1).jpg" alt="Kebun TOGA"
+            class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-gray-900/40 flex items-center justify-center">
+            <h3 class="text-white text-xl font-semibold">Green House</h3>
+          </div>
+        </div>
+
+        <!-- Card 2: Proses Pengolahan -->
+        <div class="relative rounded-lg overflow-hidden shadow-lg group"
+          onclick="openGaleri('assets/images/galeri (2).jpg')">
+          <img src="assets/images/galeri (2).jpg" alt="Proses Pengolahan"
+            class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-gray-900/40 flex items-center justify-center">
+            <h3 class="text-white text-xl font-semibold">Proses Pengolahan</h3>
+          </div>
+        </div>
+
+        <!-- Card 3: Acara Komunitas -->
+        <div class="relative rounded-lg overflow-hidden shadow-lg group"
+          onclick="openGaleri('assets/images/galeri (3).jpg')">
+          <img src="assets/images/galeri (3).jpg" alt="Acara Komunitas"
+            class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+          <div class="absolute inset-0 bg-gray-900/40 flex items-center justify-center">
+            <h3 class="text-white text-xl font-semibold">Acara Komunitas</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="imageModal" class="fixed inset-0 bg-black/70 z-50 hidden items-center justify-center">
+        <div class="relative max-w-3xl mx-auto">
+          <img id="modalImage" src="" alt="Galeri" class="rounded-lg shadow-lg w-full max-h-[90vh] object-contain" />
+          <button onclick="closeGaleri()"
+            class="absolute top-2 right-2 bg-white text-gray-800 rounded-full p-2 hover:bg-red-500 hover:text-white">
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION KONTAK -->
+  <section id="kontak" class="bg-green-50 py-16 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
+
+      <!-- Kolom 1: Info Kontak -->
+      <div class="md:w-1/2 space-y-6">
+        <h2 class="text-4xl font-bold text-green-800">Kontak Kami</h2>
+        <p class="text-green-700 leading-relaxed">
+          Herbal Village adalah platform yang menghubungkan masyarakat dengan manfaat tanaman obat keluarga (TOGA)
+          secara
+          langsung dari petani dan komunitas desa.
+        </p>
+        <div class="space-y-2 text-green-700">
+          <p><strong>Alamat:</strong> Jl. Pakuan, Tegallega. Kecamatan Bogor Tengah, Kota Bogor. Jawa Barat 16143</p>
+          <p><strong>Telepon: +62 857-9872-6923</strong></p>
+          <p><strong>Email:</strong> <a href="mailto:unpak@gmail.com"
+              class="text-green-800 underline">unpak@gmail.com</a></p>
+          <a href="https://wa.me/6285798726923" target="_blank"
+            class="inline-flex items-center gap-2 mt-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm transition">
+            <img src="./assets/images/whatsapp-icon.svg" alt="WhatsApp" class="w-5 h-5 text-white" />
+            Hubungi via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Kolom 2: Form Kontak -->
+      <div class="md:w-1/2 bg-white p-6 rounded-lg shadow-md">
+        <form class="space-y-4">
+          <div>
+            <label for="nama" class="block text-green-700 font-medium mb-1">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"
+              class="w-full border border-green-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+              required>
+          </div>
+          <div>
+            <label for="subject" class="block text-green-700 font-medium mb-1">Subjek</label>
+            <input type="text" id="subject" name="subject" placeholder="Subjek pesan"
+              class="w-full border border-green-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+              required>
+          </div>
+          <div>
+            <label for="pesan" class="block text-green-700 font-medium mb-1">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda..."
+              class="w-full border border-green-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+              required></textarea>
+          </div>
+          <button type="submit"
+            class="bg-green-700 hover:bg-green-800 text-white font-medium px-6 py-2 rounded transition duration-300">
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-green-800 text-white py-10 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6">
+      <!-- Logo & Deskripsi Singkat -->
+      <div class="md:w-1/3 text-center md:text-left">
+        <div class="flex row gap-4 items-end mb-2">
+          <img src="./assets/images/logo_white.png" alt="Herbal Village Logo" class="w-16" />
+          <h2 class="text-2xl font-bold mb-2">Herbal Village</h2>
+        </div>
+        <p class="text-green-200">
+          Marketplace tanaman obat keluarga yang menghubungkan petani dan komunitas TOGA dengan konsumen secara
+          langsung,
+          mendukung gaya hidup sehat dan pelestarian tanaman herbal.
+        </p>
+      </div>
+
+      <!-- Navigasi Footer -->
+      <div class="md:w-1/2 grid grid-cols-2 gap-6 text-green-200">
+        <div class="md:pl-24">
+          <h3 class="font-semibold mb-3">Navigasi</h3>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-white transition">Tentang Kami</a></li>
+            <li><a href="#produk" class="hover:text-white transition">Produk Herbal</a></li>
+            <li><a href="#edukasi" class="hover:text-white transition">Edukasi & Artikel</a></li>
+            <li><a href="#galeri" class="hover:text-white transition">Galeri</a></li>
+            <li><a href="#kontak" class="hover:text-white transition">Kontak Kami</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Kontak Footer -->
+      <div class="md:w-1/3 text-center md:text-left text-green-200">
+        <h3 class="font-semibold mb-3">Kontak</h3>
+        <p>Jl. Pakuan, Tegallega. Kecamatan Bogor Tengah, Kota Bogor. Jawa Barat 16143</p>
+        <p>Telp: <a href="tel:+6285798726923" class="hover:text-white">+62 857-9872-6923</a></p>
+        <p>Email: <a href="mailto:unpak@gmail.com" class="hover:text-white">unpak@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="mt-10 border-t border-green-700 pt-6 text-center text-green-300 text-sm">
+      &copy; 2025 Herbal Village. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JS for navbar toggle -->
+  <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
